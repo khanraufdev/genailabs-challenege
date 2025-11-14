@@ -2,7 +2,7 @@ import { queryClient } from "@/utils/query-client";
 import { useMutation } from "@tanstack/react-query";
 import { toast } from "sonner";
 import { createChat } from "./methods";
-import { Chat } from "@/generated/prisma/client";
+import { Chat } from "@prisma/client";
 
 export const useCreateChat = () => {
   return useMutation<Chat, Error, Parameters<typeof createChat>[0]>({

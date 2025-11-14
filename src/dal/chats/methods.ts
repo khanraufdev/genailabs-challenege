@@ -1,4 +1,4 @@
-import { Chat } from "@/generated/prisma/client";
+import { Chat } from "@prisma/client";
 
 type GetChats = Pick<Chat, "id" | "prompt" | "modelA" | "modelB"> & {
   createdAt: string;
